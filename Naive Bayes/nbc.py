@@ -24,6 +24,7 @@ Blog:
 Modify:
 	2017-08-22
 """
+# hello
 def TextProcessing(folder_path, test_size = 0.2):
 	folder_list = os.listdir(folder_path)						#查看folder_path下的文件
 	data_list = []												#数据集数据
