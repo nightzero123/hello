@@ -24,7 +24,6 @@ Blog:
 Modify:
 	2017-08-22
 """
-# hello
 def TextProcessing(folder_path, test_size = 0.2):
 	folder_list = os.listdir(folder_path)						#查看folder_path下的文件
 	data_list = []												#数据集数据
@@ -38,7 +37,7 @@ def TextProcessing(folder_path, test_size = 0.2):
 		j = 1
 		#遍历每个txt文件
 		for file in files:
-			if j > 100:											#每类txt样本数最多100个
+			if j > 100:												#每类txt样本数最多100个
 				break
 			with open(os.path.join(new_folder_path, file), 'r', encoding = 'utf-8') as f:	#打开txt文件
 				raw = f.read()
